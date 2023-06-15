@@ -91,4 +91,11 @@
 	  </MauiXaml>
 	</ItemGroup>
 
+	<PropertyGroup Condition="$(TargetFramework.Contains('-android')) and '$(Configuration)' == 'Release'">
+		<AndroidSigningKeyStore>notesapp.keystore</AndroidSigningKeyStore>
+		<AndroidSigningKeyAlias>notesapp</AndroidSigningKeyAlias>
+		<AndroidSigningKeyPass>env:AndroidSigningPassword</AndroidSigningKeyPass>
+		<AndroidSigningStorePass>env:AndroidSigningPassword</AndroidSigningStorePass>
+	</PropertyGroup>
+
 </Project>

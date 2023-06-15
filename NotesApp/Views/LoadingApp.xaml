@@ -10,6 +10,7 @@
             IsRunning="True"
             WidthRequest="70"
             HeightRequest="70"
+            SemanticProperties.Description="Loading"
             />
     </VerticalStackLayout>
 </ContentPage>
